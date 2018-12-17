@@ -8,15 +8,14 @@ git credentialsId: 'GITHUB', url: 'https://github.com/priyakarth/cicd-pipeline-g
 }
 }
 }
-   stages {
-   stage ('Build') {
+      stage ('Build') {
      steps {
     echo 'Running Build Automation '
     sh './gradlew build --no-daemon'
     archiveArtifacts artifacts: 'dist/sampleapp.zip'
       }
     }
-   }
+  
       stage ('Image Build') {
       steps {
          script {
