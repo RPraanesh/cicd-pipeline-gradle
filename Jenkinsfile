@@ -20,7 +20,7 @@ git credentialsId: 'GITHUB', url: 'https://github.com/priyakarth/cicd-pipeline-g
       steps {
          script {
       sh "docker build -t praanesh/sampleapp ."
-      sh "docker login --username=$Username--password=$password
+      sh "docker login --username=$Username--password=$password"
       sh "docker push praanesh/jenkins"
    }
       }
