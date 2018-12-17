@@ -16,6 +16,7 @@ git credentialsId: 'GITHUB', url: 'https://github.com/priyakarth/cicd-pipeline-g
     archiveArtifacts artifacts: 'dist/sampleapp.zip'
       }
     }
+      stages {
       stage ('Image Build') {
       steps {
          script {
@@ -24,5 +25,6 @@ git credentialsId: 'GITHUB', url: 'https://github.com/priyakarth/cicd-pipeline-g
  }
    }
    }
+}
 }
 }
