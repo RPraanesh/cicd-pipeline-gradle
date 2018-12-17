@@ -16,7 +16,7 @@ git credentialsId: 'GITHUB', url: 'https://github.com/priyakarth/cicd-pipeline-g
     archiveArtifacts artifacts: 'dist/sampleapp.zip'
       }
     }
-      stage ('Image Build')
+      stage ('Image Build') {
       steps {
          script {
       sh 'docker build -t praanesh/sampleapp .'
@@ -24,4 +24,5 @@ git credentialsId: 'GITHUB', url: 'https://github.com/priyakarth/cicd-pipeline-g
  }
    }
    }
+}
 }
