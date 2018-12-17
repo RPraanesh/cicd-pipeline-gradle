@@ -17,6 +17,7 @@ git credentialsId: 'GITHUB', url: 'https://github.com/priyakarth/cicd-pipeline-g
       }
     }
    }
+      stages {
       stage ('Image Build') {
       steps {
          script {
@@ -25,4 +26,5 @@ git credentialsId: 'GITHUB', url: 'https://github.com/priyakarth/cicd-pipeline-g
       }
       }
    }
+}
 }
