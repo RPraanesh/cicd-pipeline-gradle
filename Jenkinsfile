@@ -18,7 +18,7 @@ git credentialsId: 'GITHUB', url: 'https://github.com/priyakarth/cicd-pipeline-g
     }
       stage ('Image Build')
       steps {
-      sh 'sudo docker build -t praanesh/sampleapp .'
+      sh 'docker build -t praanesh/sampleapp .'
    }
  }
    }
