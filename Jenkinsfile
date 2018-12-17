@@ -26,4 +26,3 @@ git credentialsId: 'GITHUB', url: 'https://github.com/priyakarth/cicd-pipeline-g
       }
    }
 }
-}
